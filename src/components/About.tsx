@@ -1,0 +1,117 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Users, Award, Heart, Clock } from "lucide-react";
+
+const About = () => {
+  return (
+    <section id="sobre" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Nossa história
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Conheça a trajetória da Farofa Cumbuca e descubra como nossa paixão pela culinária se transformou em uma experiência única de sabor.
+            </p>
+          </div>
+
+          {/* História */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="animate-slide-up">
+              <h3 className="text-2xl font-bold text-primary mb-6">
+                Uma paixão que nasceu em 2020
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Em 2020, uma empresa modesta nasceu da paixão pela culinária. Daniel Barcellos 
+                iniciou com a criação de kits com feijoada, couve, arroz e uma irresistível farofa. 
+              </p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Esta farofa logo conquistou o paladar das pessoas em churrascos e encontros. 
+                Do simples pote transparente às novas elegantes embalagens, a Farofa Cumbuca 
+                surge como sua produção principal em uma linha de sabores em constante 
+                aprimoramento.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Hoje, oferecemos uma experiência de sabor, qualidade e confiança que 
+                transforma qualquer refeição em um momento especial.
+              </p>
+            </div>
+
+            <div className="relative">
+              <Card className="shadow-elegant hover:shadow-strong transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                      <Heart className="h-10 w-10 text-primary-foreground" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-4">
+                      Feito com amor
+                    </h4>
+                    <p className="text-muted-foreground">
+                      Cada embalagem é preparada com cuidado e dedicação, 
+                      mantendo a tradição artesanal que conquistou nossos clientes.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Valores e Diferenciais */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="shadow-elegant hover:shadow-strong transition-all duration-300 group">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
+                <h4 className="text-lg font-bold text-primary mb-2">Qualidade</h4>
+                <p className="text-muted-foreground text-sm">
+                  Ingredientes selecionados e processo artesanal garantem sabor autêntico
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-elegant hover:shadow-strong transition-all duration-300 group">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors duration-300">
+                  <Clock className="h-8 w-8 text-secondary" />
+                </div>
+                <h4 className="text-lg font-bold text-primary mb-2">Tradição</h4>
+                <p className="text-muted-foreground text-sm">
+                  5 anos aprimorando nossa receita para oferecer o melhor sabor
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-elegant hover:shadow-strong transition-all duration-300 group">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors duration-300">
+                  <Users className="h-8 w-8 text-accent" />
+                </div>
+                <h4 className="text-lg font-bold text-primary mb-2">Família</h4>
+                <p className="text-muted-foreground text-sm">
+                  Ideal para churrascos, encontros e momentos especiais em família
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-elegant hover:shadow-strong transition-all duration-300 group">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                  <Heart className="h-8 w-8 text-primary" />
+                </div>
+                <h4 className="text-lg font-bold text-primary mb-2">Paixão</h4>
+                <p className="text-muted-foreground text-sm">
+                  Cada produto é feito com amor e dedicação pela culinária brasileira
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
