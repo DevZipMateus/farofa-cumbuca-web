@@ -31,8 +31,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-elegant"
-          : "bg-background/80 backdrop-blur-sm"
+          ? "bg-black/95 backdrop-blur-md shadow-elegant"
+          : "bg-black/90 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -41,8 +41,8 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img src="/logo.png" alt="Farofa Cumbuca" className="h-12 w-auto" />
             <div>
-              <h2 className="text-xl font-bold text-primary">Farofa Cumbuca</h2>
-              <p className="text-xs text-muted-foreground">Sabor autêntico</p>
+              <h2 className="text-xl font-bold text-white">Farofa Cumbuca</h2>
+              <p className="text-xs text-white/70">Sabor autêntico</p>
             </div>
           </div>
 
@@ -50,25 +50,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-accent transition-colors duration-300 font-medium"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("sobre")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-accent transition-colors duration-300 font-medium"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("produtos")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-accent transition-colors duration-300 font-medium"
             >
               Produtos
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-accent transition-colors duration-300 font-medium"
             >
               Contato
             </button>
@@ -94,29 +94,29 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-t animate-slide-up">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md border-t border-white/10 animate-slide-up">
             <nav className="container mx-auto px-4 py-6 space-y-4">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="block w-full text-left py-2 text-white hover:text-accent transition-colors duration-300 font-medium"
               >
                 Início
               </button>
               <button
                 onClick={() => scrollToSection("sobre")}
-                className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="block w-full text-left py-2 text-white hover:text-accent transition-colors duration-300 font-medium"
               >
                 Sobre
               </button>
               <button
                 onClick={() => scrollToSection("produtos")}
-                className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="block w-full text-left py-2 text-white hover:text-accent transition-colors duration-300 font-medium"
               >
                 Produtos
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
-                className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="block w-full text-left py-2 text-white hover:text-accent transition-colors duration-300 font-medium"
               >
                 Contato
               </button>
