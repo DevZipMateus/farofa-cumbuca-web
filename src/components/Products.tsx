@@ -127,12 +127,12 @@ const Products = () => {
             <h3 className="text-2xl font-bold text-primary text-center mb-8">
               Conheça nossos sabores
             </h3>
-            <div className="grid grid-cols-2 gap-4 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               <div className="relative group overflow-hidden rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 bg-muted/20">
                 <img 
                   src="/gallery/products-1.jpg" 
                   alt="Linha completa de farofas Cumbuca com diferentes sabores"
-                  className="w-full h-auto min-h-[200px] object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto min-h-[250px] object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4">
@@ -146,7 +146,7 @@ const Products = () => {
                 <img 
                   src="/gallery/products-2.jpg" 
                   alt="Embalagens elegantes da Farofa Cumbuca"
-                  className="w-full h-auto min-h-[200px] object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto min-h-[250px] object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4">
@@ -160,26 +160,12 @@ const Products = () => {
                 <img 
                   src="/gallery/products-3.jpg" 
                   alt="Variedade de sabores da Farofa Cumbuca"
-                  className="w-full h-auto min-h-[200px] object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto min-h-[250px] object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4">
                     <p className="text-accent-foreground font-medium">Sabores únicos</p>
                     <p className="text-accent-foreground/80 text-sm">Qualidade artesanal</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative group overflow-hidden rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 bg-muted/20">
-                <img 
-                  src="/gallery/products-4.jpg" 
-                  alt="Farofa Cumbuca sabor Cebola sendo servida"
-                  className="w-full h-auto min-h-[200px] object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4">
-                    <p className="text-primary-foreground font-medium">Pronto para servir</p>
-                    <p className="text-primary-foreground/80 text-sm">Sabor Cebola</p>
                   </div>
                 </div>
               </div>

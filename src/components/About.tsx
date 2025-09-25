@@ -38,23 +38,19 @@ const About = () => {
               </p>
             </div>
 
-            <div className="relative">
-              <Card className="shadow-elegant hover:shadow-strong transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Heart className="h-10 w-10 text-primary-foreground" />
-                    </div>
-                    <h4 className="text-xl font-bold text-primary mb-4">
-                      Feito com amor
-                    </h4>
-                    <p className="text-muted-foreground">
-                      Cada embalagem é preparada com cuidado e dedicação, 
-                      mantendo a tradição artesanal que conquistou nossos clientes.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="relative animate-slide-up">
+              <div className="relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-strong transition-all duration-300">
+                <img 
+                  src="/gallery/products-4.jpg" 
+                  alt="Farofa Cumbuca sabor Cebola sendo servida - tradição artesanal"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+                <div className="absolute bottom-6 left-6">
+                  <p className="text-white font-medium text-lg">Tradição artesanal</p>
+                  <p className="text-white/80 text-sm">Sabor que conquista paladares</p>
+                </div>
+              </div>
             </div>
           </div>
 
