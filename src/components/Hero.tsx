@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -9,35 +8,30 @@ const Hero = () => {
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
-        behavior: "smooth",
+        behavior: "smooth"
       });
     }
   };
-
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: 'url(/hero-bg.jpg)'
+    }}></div>
       
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-secondary/70"></div>
       
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/20 rounded-full blur-xl animate-float" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/20 rounded-full blur-xl animate-float" style={{
+      animationDelay: "1s"
+    }}></div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Logo grande para mobile */}
           <div className="mb-8">
-            <img 
-              src="/logo.png" 
-              alt="Farofa Cumbuca" 
-              className="h-24 md:h-32 w-auto mx-auto opacity-90"
-            />
+            <img src="/logo.png" alt="Farofa Cumbuca" className="h-24 md:h-32 w-auto mx-auto opacity-90" />
           </div>
 
           {/* H1 - Nome da empresa */}
@@ -57,22 +51,12 @@ const Hero = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              variant="accent"
-              size="lg"
-              onClick={() => scrollToSection("produtos")}
-              className="min-w-[200px]"
-            >
+            <Button variant="accent" size="lg" onClick={() => scrollToSection("produtos")} className="min-w-[200px]">
               Conheça nossos produtos
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.open("https://wa.me/5555999739234", "_blank")}
-              className="min-w-[200px] border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
+            <Button variant="outline" size="lg" onClick={() => window.open("https://wa.me/5555999739234", "_blank")} className="min-w-[200px] border-primary-foreground/60 hover:bg-primary-foreground text-slate-950">
               Fale conosco
             </Button>
           </div>
@@ -94,8 +78,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
