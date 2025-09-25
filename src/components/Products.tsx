@@ -36,22 +36,22 @@ const Products = () => {
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/5555999739234?text=${encodedMessage}`, "_blank");
   };
-  return <section id="produtos" className="py-20">
-      <div className="container mx-auto px-4">
+  return <section id="produtos" className="py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-4 sm:mb-6">
               Nossos produtos
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
               Descubra nossa linha completa de farofas artesanais. Cada produto é cuidadosamente preparado 
               para oferecer uma experiência única de sabor e qualidade.
             </p>
           </div>
 
           {/* Products Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-12">
             {products.map((product, index) => <Card key={product.id} className="shadow-elegant hover:shadow-strong transition-all duration-300 group animate-slide-up border-0 bg-card/80 backdrop-blur-sm" style={{
             animationDelay: `${index * 0.2}s`
           }}>
@@ -101,16 +101,16 @@ const Products = () => {
 
           {/* Product Gallery */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-primary text-center mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-primary text-center mb-6 sm:mb-8">
               Conheça nossos sabores
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <div className="relative group overflow-hidden rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 bg-muted/20">
-                <img src="/gallery/products-1.jpg" alt="Linha completa de farofas Cumbuca com diferentes sabores" className="w-full h-auto min-h-[250px] object-contain group-hover:scale-105 transition-transform duration-300" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
+              <div className="relative group overflow-hidden rounded-lg sm:rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 bg-muted/20">
+                <img src="/gallery/products-1.jpg" alt="Linha completa de farofas Cumbuca com diferentes sabores" className="w-full h-48 sm:h-56 lg:h-64 object-contain group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4">
-                    <p className="text-primary-foreground font-medium">Linha completa</p>
-                    <p className="text-primary-foreground/80 text-sm">Diversos sabores</p>
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4">
+                    <p className="text-primary-foreground font-medium text-sm sm:text-base">Linha completa</p>
+                    <p className="text-primary-foreground/80 text-xs sm:text-sm">Diversos sabores</p>
                   </div>
                 </div>
               </div>
@@ -138,15 +138,15 @@ const Products = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center bg-gradient-primary rounded-2xl p-8 text-primary-foreground">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="text-center bg-gradient-primary rounded-xl sm:rounded-2xl p-6 sm:p-8 text-primary-foreground">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">
               Pronto para experimentar nossa farofa?
             </h3>
-            <p className="mb-6 opacity-90">
+            <p className="mb-6 opacity-90 text-sm sm:text-base px-4 sm:px-0">
               Entre em contato conosco e descubra como nossos produtos podem transformar suas refeições.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="lg" onClick={() => handleWhatsAppContact("Catálogo completo")}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Button variant="accent" size="lg" onClick={() => handleWhatsAppContact("Catálogo completo")} className="w-full sm:w-auto text-sm sm:text-base">
                 Ver catálogo completo
               </Button>
               <Button variant="outline" size="lg" onClick={() => {

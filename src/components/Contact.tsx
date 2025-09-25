@@ -50,25 +50,25 @@ const Contact = () => {
   };
 
   return (
-    <section id="contato" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="contato" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-4 sm:mb-6">
               Entre em contato
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
               Estamos prontos para atender você! Entre em contato conosco para tirar dúvidas, 
               fazer pedidos ou conhecer melhor nossos produtos.
             </p>
           </div>
 
           {/* Contact Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-16">
             {/* Contact Info Cards */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-primary mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6 text-center lg:text-left">
                 Informações de contato
               </h3>
               
@@ -79,25 +79,25 @@ const Contact = () => {
                     className="shadow-elegant hover:shadow-strong transition-all duration-300 group animate-slide-up border-0"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                    <CardContent className="p-4 sm:p-6">
+                      <div className="flex items-start space-x-3 sm:space-x-4">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300 flex-shrink-0">
                           <div className="text-primary">
                             {info.icon}
                           </div>
                         </div>
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-primary mb-1">{info.title}</h4>
-                          <p className="text-sm text-muted-foreground mb-2">{info.description}</p>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-semibold text-primary mb-1 text-sm sm:text-base">{info.title}</h4>
+                          <p className="text-xs sm:text-sm text-muted-foreground mb-2">{info.description}</p>
                           {info.link ? (
                             <a 
                               href={info.link}
-                              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                              className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-sm sm:text-base break-words"
                             >
                               {info.value}
                             </a>
                           ) : (
-                            <p className="text-foreground font-medium">{info.value}</p>
+                            <p className="text-foreground font-medium text-sm sm:text-base">{info.value}</p>
                           )}
                         </div>
                       </div>
@@ -109,24 +109,24 @@ const Contact = () => {
 
             {/* Call to Action */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-primary mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6 text-center lg:text-left">
                 Fale conosco agora
               </h3>
               
               <Card className="shadow-elegant border-0 bg-gradient-primary text-primary-foreground">
-                <CardContent className="p-8 text-center">
-                  <MessageCircle className="h-16 w-16 mx-auto mb-6 opacity-90" />
-                  <h4 className="text-xl font-bold mb-4">
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <MessageCircle className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-4 sm:mb-6 opacity-90" />
+                  <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
                     WhatsApp
                   </h4>
-                  <p className="mb-6 opacity-90">
+                  <p className="mb-4 sm:mb-6 opacity-90 text-sm sm:text-base leading-relaxed">
                     A forma mais rápida de entrar em contato conosco. 
                     Responderemos em alguns minutos!
                   </p>
                   <Button 
                     variant="whatsapp" 
                     size="lg" 
-                    className="w-full"
+                    className="w-full text-sm sm:text-base"
                     onClick={handleWhatsAppContact}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
