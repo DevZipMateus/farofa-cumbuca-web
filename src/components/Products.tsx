@@ -5,8 +5,8 @@ import { Package, Scale, Star } from "lucide-react";
 const Products = () => {
   const products = [{
     id: 1,
-    name: "Farofa Cumbuca Tradicional",
-    description: "Nossa receita clássica que conquistou o paladar brasileiro. Perfeita para acompanhar feijoada, churrascos e refeições especiais.",
+    name: "Farofa Cumbuca de Cebola",
+    description: "Nossa farofa mais vendida com sabor marcante de cebola caramelizada. Perfeita para acompanhar feijoada, churrascos e refeições especiais.",
     weight: "230g",
     type: "Embalagem individual",
     features: ["Receita tradicional", "Sabor marcante", "Embalagem prática"],
