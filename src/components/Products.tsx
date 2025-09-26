@@ -14,15 +14,6 @@ const Products = () => {
     highlight: "Mais vendida"
   }, {
     id: 2,
-    name: "Farofa Cumbuca Premium",
-    description: "Uma versão especial da nossa farofa com ingredientes selecionados e toque especial para paladares exigentes.",
-    weight: "230g",
-    type: "Embalagem premium",
-    features: ["Ingredientes premium", "Sabor refinado", "Embalagem elegante"],
-    icon: <Star className="h-6 w-6" />,
-    highlight: "Premium"
-  }, {
-    id: 3,
     name: "Farofa Cumbuca a Granel",
     description: "Para estabelecimentos e grandes consumidores. Qualidade Cumbuca em quantidades maiores com preço especial.",
     weight: "Sob consulta",
